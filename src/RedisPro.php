@@ -11,7 +11,7 @@ use think\cache\Driver;
  * 要求安装phpredis扩展：https://github.com/nicolasff/phpredis
  * @author    尘缘 <130775@qq.com>
  */
-class Redis extends Driver
+class RedisPro extends Driver
 {
     protected $options = [
         'host'       => '127.0.0.1',
