@@ -6,5 +6,10 @@
         "name": "Marlon Fan",
         "email": "marlon@tfan.net"
     }],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "classmap": [{
+            "think\\cache\\driver\\RedisPro": "src/RedisPro.php"
+        }]
+    }
 }
