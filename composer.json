@@ -1,0 +1,10 @@
+{
+    "name": "marlon/thinkphp-redis",
+    "description": "thinkphp 5.0.*下的redis升级版本驱动,支持各种官方不支持的red操作",
+    "type": "library",
+    "authors": [{
+        "name": "Marlon Fan",
+        "email": "marlon@tfan.net"
+    }],
+    "require": {}
+}
