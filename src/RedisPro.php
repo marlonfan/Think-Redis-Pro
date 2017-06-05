@@ -164,31 +164,8 @@ class RedisPro extends Driver
         return $this->handler->flushDB();
     }
 
-    /**
-     * 获取HashTable
-     * @access public
-     * @param string $hashTableName
-     * @param string $hashTableKey
-     * @return mixed
-     */
-    public function hget($hashTableName, $hashTableKey)
+    public function getHandler()
     {
-        $hashTableName = $this->getCacheKey($hashTableName);
-        $hashTableKey = $this->getCacheKey($hashTableKey);
-        return $this->handler->hGet($hashTableName, $hashTableKey);
+        return $this->handler;
     }
-
-    /**
-     * 设置HashTable
-     * @access public
-     * @param string $hashTableName
-     * @param string $hashTableKey
-     * @param int $expire
-     * @return mixed
-     */
-    public function hset($hashTableName, $hashTableKey, $expire)
-    {
-
-    }
-
 }
